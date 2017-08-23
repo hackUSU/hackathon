@@ -2,12 +2,26 @@
 
 body {
   margin: 0;
+  font-family: $site-font;
+}
+
+h2 {
+  text-align: center;
+}
+
+.blue {
+  color: $logo-blue
+}
+
+h4 {
+  padding: 5px 15px;
 }
 
 .nav-bar {
   background-color: $black;
   color: $white;
   position: fixed;
+  z-index: 5;
   width: 100%;
   height: 70px;
   font-size: 20px;
@@ -15,11 +29,11 @@ body {
   .navigation {
     display: inline-block;
     position: absolute;
-    right: 10;
+    right: 150px;
 
     .nav-item {
       display: inline-block;
-      padding: 21px;
+      padding: 21px 10px;
 
     }
   }
@@ -41,7 +55,7 @@ body {
 
   img {
     width: 100%;
-    height: 500px;
+    height: 600px;
   }
 }
 
@@ -57,10 +71,26 @@ body {
     width: 300px;
     margin-top: 115px;
   }
+
+  #register {
+    padding: 20px;
+    color: $white;
+    background-color: $logo-blue;
+    width: 20%;
+    margin-left: 40%;
+    border-radius: 10px;
+  }
 }
 
 #about {
   position: absolute;
-  top: 570px;
+  top: 670px;
   width: 100%;
+  padding: 30px;
+  text-align: center;
+
+  .row {
+    margin-left: 125px;
+    text-align: left;
+  }
 }
