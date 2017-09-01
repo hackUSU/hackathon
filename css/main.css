@@ -32,23 +32,19 @@ ul {
   height: 70px;
   font-size: 20px;
 }
-
 .nav-bar .navigation {
   display: inline-block;
   position: absolute;
   right: 150px;
 }
-
 .nav-bar .navigation .nav-item {
   display: inline-block;
   padding: 21px 10px;
 }
-
 .nav-bar .nav-icon {
   display: inline-block;
   padding: 15px;
 }
-
 .nav-bar .nav-icon img {
   height: 40px;
 }
@@ -59,7 +55,6 @@ ul {
   top: 70px;
   width: 100%;
 }
-
 #myCarousel img {
   width: 100%;
   height: 600px;
@@ -73,12 +68,10 @@ ul {
   height: 500px;
   text-align: center;
 }
-
 #logo-overlay img {
   width: 300px;
   margin-top: 115px;
 }
-
 #logo-overlay #register {
   padding: 20px;
   color: #fff;
@@ -95,14 +88,9 @@ ul {
   padding: 30px;
   text-align: center;
 }
-
 #about .row {
   margin-top: 20px;
 }
-
 #about ul {
   margin-left: 150px;
 }
- 
-
- /*# sourceMappingURL= main.css.map */
