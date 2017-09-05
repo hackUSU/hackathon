@@ -24,12 +24,26 @@ npm run dev
 
 to start the development server. You can then navigate your browser to `localhost:8080` and Webpack will take care of the rest!
 
-__NOTE:__
+## Explanation of npm scripts and packages
 
-Before you commit any code, make sure you run
+Here is a list of all the npm scripts you can run and what they do.
 
 ```
 npm run build
 ```
+This command will run `webpack` to combine all Javascript and Sass into one `bundle.js` file in the root of the project.
 
-to finalize changes. This step is necessary because the Webpack dev server builds in memory, saving tons of time by not going back and forth to disc.
+```
+npm run dev
+```
+This command will run `webpack-dev-server`, which watches all your Javascript and Sass files, compiles them when there are changes, and serves your `index.html` file at `localhost:8080`. It will automatically refresh the browser when you make a change so you don't constantly have to hit the refresh button.
+
+```
+npm run add
+```
+This command stages `bundle.js` in git. You probably won't ever use this directly.
+
+```
+npm run precommit
+```
+This command does `run-s build add`. The `run-s` part comes from the NPM package `npm-run-all`, and runs the following commands sequentially. So, this does `npm run build`, and when it's done it runs `npm run add`. You probably won't ever use this command directly either. The NPM package Husky will run this automatically every time you commit.
