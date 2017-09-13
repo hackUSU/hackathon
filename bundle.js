@@ -80,9 +80,11 @@ $(document).ready(() => {
 
   // Make links smooth scroll to elements
   $('a[href^="#"]').on('click', function(event) {
-    var target = $(this.getAttribute('href'));
+    var href = this.getAttribute('href');
+    console.log(href.indexOf('faq'))
+    var target = $(href);
     var navbarHeight = 70;
-    if( target.length ) {
+    if( target.length && href.indexOf('collapse') == -1) {
         event.preventDefault();
         $('html, body').stop().animate({
             scrollTop: target.offset().top - navbarHeight
