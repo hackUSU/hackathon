@@ -1,5 +1,5 @@
 require('../css/main.scss');
 $(document).ready(() => {
-  debugger;
+  // debugger;
   $('.carousel').slick()
 })
