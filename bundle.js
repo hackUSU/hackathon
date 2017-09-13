@@ -69,8 +69,27 @@
 
 __webpack_require__(1);
 $(document).ready(() => {
-  // debugger;
-  $('.carousel').slick()
+
+  // Setup slideshow
+  $(".slideshow").backstretch([
+    "../assets/logan1.jpg",
+    "../assets/logan2.jpg",
+    "../assets/logan3.jpg",
+    "../assets/logan4.jpg",
+  ], {fade: 750, duration: 2500});
+
+  // Make links smooth scroll to elements
+  $('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    var navbarHeight = 70;
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top - navbarHeight
+        }, 1000);
+    }
+});
+
 })
 
 /***/ }),
@@ -113,7 +132,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Montserrat);", ""]);
 
 // module
-exports.push([module.i, ".container-fluid {\n  padding-left: 0;\n  padding-right: 0; }\n\nbody {\n  margin: 0;\n  font-family: \"Montserrat\", sans-serif; }\n\nh2 {\n  text-align: center;\n  font-weight: bold; }\n\nh3 {\n  font-weight: bold; }\n\nh4 {\n  padding: 5px 15px;\n  font-weight: bold; }\n\n.blue {\n  color: #20425b; }\n\n.blue-back {\n  background-color: #20425b;\n  color: #FFF; }\n\n.white-back {\n  background-color: #FFF; }\n\nul {\n  text-align: left; }\n\n.nav-bar {\n  background-color: #000;\n  color: #fff;\n  position: fixed;\n  z-index: 5;\n  width: 100%;\n  height: 70px;\n  font-size: 20px; }\n  .nav-bar .navigation {\n    display: inline-block;\n    position: absolute;\n    right: 150px; }\n    .nav-bar .navigation .nav-item {\n      display: inline-block;\n      padding: 21px 10px;\n      font-weight: bold; }\n  .nav-bar .nav-icon {\n    display: inline-block;\n    padding: 15px; }\n    .nav-bar .nav-icon img {\n      height: 40px; }\n\n#myCarousel {\n  width: 100%; }\n  #myCarousel img {\n    width: 100%;\n    height: 600px; }\n\n#logo-overlay {\n  position: absolute;\n  z-index: 2;\n  top: 70px;\n  width: 100%;\n  height: 500px;\n  text-align: center; }\n  #logo-overlay img {\n    width: 300px;\n    margin-top: 115px; }\n  #logo-overlay #register {\n    padding: 20px;\n    color: #fff;\n    background-color: #20425b;\n    width: 20%;\n    margin-left: 40%;\n    border-radius: 10px; }\n\n#about {\n  width: 100%;\n  padding: 30px;\n  text-align: center; }\n  #about .row {\n    margin-top: 20px; }\n  #about ul {\n    margin-left: 150px; }\n\n#sponsors, #faq, #schedule, #contact {\n  width: 100%;\n  padding: 30px 200px;\n  text-align: center; }\n  #sponsors .row, #faq .row, #schedule .row, #contact .row {\n    margin-top: 20px; }\n  #sponsors ul, #faq ul, #schedule ul, #contact ul {\n    margin-left: 150px; }\n\n.pad-img {\n  margin-bottom: 10px; }\n", ""]);
+exports.push([module.i, ".container-fluid {\n  padding-left: 0;\n  padding-right: 0; }\n\nbody {\n  margin: 0;\n  font-family: \"Montserrat\", sans-serif;\n  position: relative; }\n\nh2 {\n  text-align: center;\n  font-weight: bold; }\n\nh3 {\n  font-weight: bold; }\n\nh4 {\n  padding: 5px 15px;\n  font-weight: bold; }\n\n.blue {\n  color: #20425b; }\n\n.blue-back {\n  background-color: #20425b;\n  color: #FFF; }\n\n.white-back {\n  background-color: #FFF; }\n\nul {\n  text-align: left; }\n\n.nav {\n  background-color: #1C1B1B;\n  color: #fff;\n  position: fixed;\n  z-index: 5;\n  width: 100%;\n  height: 70px;\n  font-size: 20px; }\n  .nav .navigation {\n    display: inline-block;\n    position: absolute;\n    right: 150px; }\n    .nav .navigation .nav-item {\n      display: inline-block;\n      padding: 21px 10px;\n      font-weight: bold; }\n  .nav .nav-icon {\n    display: inline-block;\n    padding: 15px; }\n    .nav .nav-icon img {\n      height: 40px; }\n\n#myCarousel {\n  width: 100%; }\n  #myCarousel img {\n    width: 100%;\n    height: 600px; }\n\n.slideshow {\n  width: 100%;\n  height: 700px; }\n\n#logo-overlay {\n  position: absolute;\n  z-index: 2;\n  top: 70px;\n  width: 100%;\n  height: 500px;\n  text-align: center; }\n  #logo-overlay img {\n    width: 300px;\n    margin-top: 115px; }\n  #logo-overlay #register {\n    padding: 20px;\n    color: #fff;\n    background-color: #20425b;\n    width: 20%;\n    margin-left: 40%;\n    border-radius: 10px; }\n\n#about {\n  width: 100%;\n  padding: 30px;\n  text-align: center; }\n  #about .row {\n    margin-top: 20px; }\n  #about ul {\n    margin-left: 150px; }\n\n#sponsors, #faq, #schedule, #contact {\n  width: 100%;\n  padding: 30px 200px;\n  text-align: center; }\n  #sponsors .row, #faq .row, #schedule .row, #contact .row {\n    margin-top: 20px; }\n  #sponsors ul, #faq ul, #schedule ul, #contact ul {\n    margin-left: 150px; }\n\n.pad-img {\n  margin-bottom: 10px; }\n", ""]);
 
 // exports
 
