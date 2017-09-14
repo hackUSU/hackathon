@@ -65,7 +65,10 @@ ul {
     .nav-item {
       display: inline-block;
       padding: 15px 10px;
-      font-weight: bold;
+      a {
+        font-weight: bold;
+        color: $mlh-blue;
+      }
     }
   }
 
@@ -142,8 +145,12 @@ ul {
 }
 
 .card-block {
-  // color: #000;
-  background-color: $logo-blue;
+  color: #000;
+  // background-color: $logo-blue;
+}
+
+.collapsed {
+  color: $logo-blue;
 }
 
 .pad-img {
