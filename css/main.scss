@@ -49,7 +49,7 @@ ul {
 }
 
 .nav {
-  background-color: #2D2C2C;
+  background-color: $dark-grey;
   color: $white;
   position: fixed;
   z-index: 5;
@@ -67,6 +67,11 @@ ul {
       padding: 15px 10px;
       font-weight: bold;
     }
+  }
+
+  .subtle {
+    font-size: 12px;
+    color: rgba(#FFF, .4) !important;
   }
 
   .nav-icon {
@@ -134,6 +139,11 @@ ul {
     margin-left: 150px;
   }
 
+}
+
+.card-block {
+  // color: #000;
+  background-color: $logo-blue;
 }
 
 .pad-img {

@@ -3,10 +3,10 @@ $(document).ready(() => {
 
   // Setup slideshow
   $(".slideshow").backstretch([
-    "../assets/logan1.jpg",
-    "../assets/logan2.jpg",
-    "../assets/logan3.jpg",
-    "../assets/logan4.jpg",
+    "assets/logan1.jpg",
+    "assets/logan2.jpg",
+    "assets/logan3.jpg",
+    "assets/logan4.jpg",
   ], {fade: 750, duration: 2500});
 
   // Make links smooth scroll to elements
