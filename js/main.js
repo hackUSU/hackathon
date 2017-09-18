@@ -1,4 +1,5 @@
 require('../css/main.scss');
+require('./jquery.backstretch.min');
 $(document).ready(() => {
 
     // Setup slideshow
