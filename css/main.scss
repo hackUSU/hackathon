@@ -30,22 +30,22 @@ h4 {
 }
 
 .white {
-  color: #FFF;
+  color: $white;
 }
 
 .blue-back {
   h1, h2, h3, h4 {
-    color: #FFF;
+    color: $white;
   }
   background-color: $logo-blue;
-  color: #FFF;
+  color: $white;
 }
 
 .white-back {
   h1, h2, h3, h4 {
     color: $logo-blue;
   }
-  background-color: #FFF;
+  background-color: $white;
 }
 
 ul {
@@ -71,14 +71,14 @@ ul {
       padding: 15px 10px;
       a {
         font-weight: bold;
-        color: #FFF;
+        color: $white;
       }
     }
   }
 
   .subtle {
     font-size: 12px;
-    color: rgba(#FFF, .4) !important;
+    color: rgba($white, .4) !important;
   }
 
   .nav-icon {
@@ -168,8 +168,8 @@ ul {
 
 .contact-icon {
   // background-color: lighten($logo-blue, 10%);
-  // color: #FFF;
-  background-color: #FFF;
+  // color: $white;
+  background-color: $white;
   color: $logo-blue;
   font-size: 16px;
   height: 30px;
@@ -185,9 +185,31 @@ ul {
 }
 
 .contact-link {
-  color: #FFF;
+  color: $white;
 }
 
 .contact-link:hover {
-  color: #FFF;
+  color: $white;
+}
+
+footer {
+  background-color: $dark-grey; 
+  color: $white;
+}
+
+.footer-icons {
+  margin: auto;
+  padding-top: 23px;
+  text-align: center;
+  font-size: 32px;
+  height: 90px;
+}
+
+.footer-link {
+  margin-left: 35px;
+  color: $white;
+}
+
+.footer-link:hover {
+  color: lighten($logo-blue,15%);
 }
