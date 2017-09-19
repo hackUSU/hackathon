@@ -165,3 +165,29 @@ ul {
 .pad-img {
   margin-bottom: 10px;
 }
+
+.contact-icon {
+  // background-color: lighten($logo-blue, 10%);
+  // color: #FFF;
+  background-color: #FFF;
+  color: $logo-blue;
+  font-size: 16px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 6px;
+  margin-right: 15px;
+}
+
+#contact {
+  height: 200px;
+}
+
+.contact-link {
+  color: #FFF;
+}
+
+.contact-link:hover {
+  color: #FFF;
+}
