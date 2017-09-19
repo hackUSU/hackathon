@@ -1,6 +1,6 @@
 require('../css/main.scss');
 require('./jquery.backstretch.min');
-$(document).ready(() => {
+$(document).ready(function() {
 
     // Setup slideshow
     $(".slideshow").backstretch([

@@ -4,7 +4,7 @@
   "description": "New site for 2017 hackathon",
   "main": "js/main.js",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack -p",
     "dev": "webpack-dev-server",
     "add": "git add bundle.js",
     "precommit": "run-s build add"
