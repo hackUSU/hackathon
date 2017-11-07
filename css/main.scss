@@ -138,7 +138,7 @@ ul {
   width: 100%;
 }
 
-#sponsors, #faq, #schedule, #contact {
+#sponsors, #faq, #contact {
   width: 100%;
   padding: 30px 200px;
   text-align: center;
@@ -153,9 +153,49 @@ ul {
 
 }
 
+#schedule {
+  width: 100%;
+  padding: 30px 200px;
+  text-align: center;
+  
+  .row {
+    margin-top: 20px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  h3 {
+    padding-top: 15px;
+    font-size: 1.5em;
+  }
+
+}
+
 .card-block {
   color: #000;
   // background-color: $logo-blue;
+}
+
+.schedule-time-left {
+  font-weight: bold;
+  font-size: 1.25em;
+  margin-right: 10px;
+  margin-left: 30%;
+}
+
+.schedule-time-right {
+  font-weight: bold;
+  font-size: 1.25em;
+  margin-left: 10px;
+}
+
+.schedule-time {
+  font-weight: bold;
+  font-size: 1.25em;
 }
 
 .collapsed {
