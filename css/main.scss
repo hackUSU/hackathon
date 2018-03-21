@@ -119,6 +119,21 @@ ul {
 
 }
 
+.btn-slack {
+  color: #fff;
+}
+
+.btn-slack:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.btn-slack-icn {
+  color: #fff;
+  font-size:35;
+  padding-right:0px;
+}
+
 .btn-register {
   background-color: $logo-blue;
   padding: 30px;
