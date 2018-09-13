@@ -60,12 +60,17 @@ hr{
 }
 
 ul {
-	padding: 0;
+	padding:0;
 	list-style:none;
 	text-align:center;
 }
 
-
+.mid-text-link:focus {
+	color: $white;
+}
+.mid-text-link:hover {
+	color: $white;
+}
 
 .nav {
 	background-color: $dark-grey;
@@ -133,16 +138,16 @@ ul {
 	}
 }
 
-.btn-slack {
+.btn-slack, .btn-facebook {
 	color: #fff;
 }
 
-.btn-slack:hover {
+.btn-slack:hover, .btn-facebook:hover {
 	color: #fff;
 	text-decoration: underline;
 }
 
-.btn-slack-icn {
+.btn-slack-icn, .btn-facebook-icn {
 	color: #fff;
 	font-size:35;
 	padding-right:0px;
@@ -154,6 +159,27 @@ ul {
 	color: #fff;
 	font-weight: bold;
 	cursor: pointer;
+}
+
+.btn-register-white {
+	background-color: $logo-blue;
+	border:solid 2px $white;
+	color:$white;
+	padding: 30px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.btn-register-white:hover {
+	background-color: $white;
+	border:solid 2px $logo-blue;
+	color:$logo-blue;
+	padding: 30px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.bold-emphasis {
+	font-weight:bold;
 }
 
 #about, #community-competition {
