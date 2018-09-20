@@ -1,4 +1,4 @@
-@import 'defines';
+@import "defines";
 
 .container-fluid {
   padding-left: 0;
@@ -33,8 +33,22 @@ h4 {
   color: $white;
 }
 
+hr {
+  background-color: $logo-blue;
+  border: solid 2px $white;
+
+  margin: 0;
+  padding: 0;
+  border-left: none;
+  border-right: none;
+  height: 2px;
+}
+
 .blue-back {
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     color: $white;
   }
   background-color: $logo-blue;
@@ -42,14 +56,26 @@ h4 {
 }
 
 .white-back {
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     color: $logo-blue;
   }
   background-color: $white;
 }
 
 ul {
-  text-align: left;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.mid-text-link:focus {
+  color: $white;
+}
+.mid-text-link:hover {
+  color: $white;
 }
 
 .nav {
@@ -78,7 +104,7 @@ ul {
 
   .subtle {
     font-size: 12px;
-    color: rgba($white, .4) !important;
+    color: rgba($white, 0.4) !important;
   }
 
   .nav-icon {
@@ -116,22 +142,24 @@ ul {
     margin-left: 40%;
     border-radius: 10px;
   }
-
 }
 
-.btn-slack {
+.btn-slack,
+.btn-facebook {
   color: #fff;
 }
 
-.btn-slack:hover {
+.btn-slack:hover,
+.btn-facebook:hover {
   color: #fff;
   text-decoration: underline;
 }
 
-.btn-slack-icn {
+.btn-slack-icn,
+.btn-facebook-icn {
   color: #fff;
-  font-size:35;
-  padding-right:0px;
+  font-size: 35;
+  padding-right: 0px;
 }
 
 .btn-register {
@@ -142,11 +170,33 @@ ul {
   cursor: pointer;
 }
 
-#about {
+.btn-register-white {
+  background-color: $logo-blue;
+  border: solid 2px $white;
+  color: $white;
+  padding: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-register-white:hover {
+  background-color: $white;
+  border: solid 2px $logo-blue;
+  color: $logo-blue;
+  padding: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bold-emphasis {
+  font-weight: bold;
+}
+
+#about,
+#community-competition {
   width: 100%;
   padding: 30px;
   text-align: center;
-  
+
   .row {
     margin-top: 20px;
   }
@@ -155,33 +205,29 @@ ul {
     width: 70%;
     margin: auto;
   }
-
 }
 
 .img-responsive {
   width: 100%;
 }
 
-#sponsors, #faq, #contact {
+#sponsors,
+#faq,
+#contact {
   width: 100%;
   padding: 30px 200px;
   text-align: center;
-  
+
   .row {
     margin-top: 20px;
   }
-
-  ul {
-    margin-left: 150px;
-  }
-
 }
 
 #schedule {
   width: 100%;
   padding: 30px 200px;
   text-align: center;
-  
+
   .row {
     margin-top: 20px;
   }
@@ -196,7 +242,6 @@ ul {
     padding-top: 15px;
     font-size: 1.5em;
   }
-
 }
 
 .card-block {
@@ -257,7 +302,7 @@ ul {
 }
 
 footer {
-  background-color: $dark-grey; 
+  background-color: $dark-grey;
   color: $white;
 }
 
@@ -275,5 +320,5 @@ footer {
 }
 
 .footer-link:hover {
-  color: lighten($logo-blue,15%);
+  color: lighten($logo-blue, 15%);
 }
