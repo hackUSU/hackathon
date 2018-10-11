@@ -301,7 +301,7 @@
 				<div class="col-md-8 mx-auto">
 					<h2>FAQ</h2>
 
-					<div id="accordion" role="tablist" aria-multiselectable="true">
+					<div id="accordion" role="tablist">
 						<div class="card">
 							<div class="card-header" role="tab" id="headingOne">
 								<h5 class="mb-0">
@@ -475,11 +475,11 @@
 
 					<h2 style="margin-top: 25px;margin-bottom: 25px;">Prize Categories</h2>
 
-					<div id="accordion" role="tablist" aria-multiselectable="true">
+					<div id="accordion2" role="tablist" aria-multiselectable="true">
 						<div class="card">
 							<div class="card-header" role="tab" id="headingFiveP">
 								<h5 class="mb-0">
-									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFiveP" aria-expanded="false"
+									<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFiveP" aria-expanded="false"
 									 aria-controls="collapseFiveP">
 										General
 									</a>
@@ -499,7 +499,7 @@
 						<div class="card">
 							<div class="card-header" role="tab" id="headingOneP">
 								<h5 class="mb-0">
-									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOneP" aria-expanded="false"
+									<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOneP" aria-expanded="false"
 									 aria-controls="collapseOneP">
 										Open Source
 									</a>
@@ -514,7 +514,7 @@
 						<div class="card">
 							<div class="card-header" role="tab" id="headingTwoP">
 								<h5 class="mb-0">
-									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwoP" aria-expanded="false"
+									<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwoP" aria-expanded="false"
 									 aria-controls="collapseTwoP">
 										Game Development
 									</a>
@@ -535,7 +535,7 @@
 						<div class="card">
 							<div class="card-header" role="tab" id="headingThreeP">
 								<h5 class="mb-0">
-									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThreeP" aria-expanded="false"
+									<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseThreeP" aria-expanded="false"
 									 aria-controls="collapseThreeP">
 										Data Analysis
 									</a>
@@ -556,7 +556,7 @@
 						<div class="card">
 							<div class="card-header" role="tab" id="headingFourP">
 								<h5 class="mb-0">
-									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFourP" aria-expanded="false"
+									<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFourP" aria-expanded="false"
 									 aria-controls="collapseFourP">
 										Hardware
 									</a>
@@ -596,10 +596,14 @@
 					Judges will take into account the following criteria
 				</p>
 				<p>
-					<strong>Basis on Evidence</strong></br><!--
-					--><strong>Innovation</strong></br><!--
-					--><strong>Accessibility</strong></br><!--
-					--><strong>Completeness</strong></br><!--
+					<strong>Basis on Evidence</strong></br>
+					<!--
+					--><strong>Innovation</strong></br>
+					<!--
+					--><strong>Accessibility</strong></br>
+					<!--
+					--><strong>Completeness</strong></br>
+					<!--
 					--><strong>Difficulty and Complexity of Project</strong>
 				</p>
 				<p>
@@ -608,15 +612,23 @@
 					to donate.
 				</p>
 				<h4>Example Ideas Include:</h4>
-				<ul>
+				<ul class="nice-ul">
 					<li>
-						Create a D&D game that  encourages people to talk about their experiences through a character in the game. If you have questions about this idea, you can contact Dr. Chris Chapman: chris.chapman@usu.edu
+						Create a D&D game that encourages people to talk about their experiences through a character in the game. If you
+						have questions about this idea, you can contact Dr. Chris Chapman: <a href="mailto:chris.chapman@usu.edu">chris.chapman@usu.edu</a>
 					</li>
 					<li>
-						Create an app that people can use to check in regularly how they are feeling and see the progress that medications for treating depression, bipolarity, etc. If you have questions about this idea, you can contact Dr. Chris Chapman: chris.chapman@usu.edu
+						Create an app that people can use to check in regularly how they are feeling and see the progress that
+						medications for treating depression, bipolarity, etc. If you have questions about this idea, you can contact Dr.
+						Chris Chapman: <a href="mailto:chris.chapman@usu.edu">chris.chapman@usu.edu</a>
 					</li>
 					<li>
-						Create an app or website that includes detailed information about different mental health services in one’s area, especially for more rural areas including Cache Valley. Some websites trying to do this exist but lack information especially in more rural areas. Be sure to include details in the information your solution provides including how much services cost and what types of insurance are accepted. An example of Cache Valley information can be found here: http://bluetoad.com/publication/?m=41444&l=1#{%22issue_id%22:395292,%22page%22:0} . If you have questions about this idea, you can contact Dr. Jess Lucero: jessica.lucero@usu.edu
+						Create an app or website that includes detailed information about different mental health services in one’s area,
+						especially for more rural areas including Cache Valley. Some websites trying to do this exist but lack
+						information especially in more rural areas. Be sure to include details in the information your solution provides
+						including how much services cost and what types of insurance are accepted. An example of Cache Valley information
+						can be found here: http://bluetoad.com/publication/?m=41444&l=1#{%22issue_id%22:395292,%22page%22:0} . If you
+						have questions about this idea, you can contact Dr. Jess Lucero: <a href="mailto:jessica.lucero@usu.edu">jessica.lucero@usu.edu</a>
 					</li>
 				</ul>
 				<a href="https://hackusu.typeform.com/to/jNeAg7" class="btn btn-outline btn-xl js-scroll-trigger">Register
@@ -714,7 +726,66 @@
 	<script>
 		window.onload = function () {
 			Particles.init({
-				selector: '.background'
+				"selector": '.background',
+				"particles": {
+					"number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+					"color": { "value": "#ffffff" },
+					"shape": {
+						"type": "circle",
+						"stroke": { "width": 0, "color": "#000000" },
+						"polygon": { "nb_sides": 5 },
+						"image": { "src": "img/github.svg", "width": 100, "height": 100 }
+					},
+					"opacity": {
+						"value": 0.5,
+						"random": false,
+						"anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false }
+					},
+					"size": {
+						"value": 3,
+						"random": true,
+						"anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false }
+					},
+					"line_linked": {
+						"enable": true,
+						"distance": 150,
+						"color": "#ffffff",
+						"opacity": 0.4,
+						"width": 1
+					},
+					"move": {
+						"enable": true,
+						"speed": 6,
+						"direction": "none",
+						"random": false,
+						"straight": false,
+						"out_mode": "out",
+						"bounce": false,
+						"attract": { "enable": false, "rotateX": 600, "rotateY": 1200 }
+					}
+				},
+				"interactivity": {
+					"detect_on": "canvas",
+					"events": {
+						"onhover": { "enable": true, "mode": "repulse" },
+						"onclick": { "enable": true, "mode": "push" },
+						"resize": true
+					},
+					"modes": {
+						"grab": { "distance": 400, "line_linked": { "opacity": 1 } },
+						"bubble": {
+							"distance": 400,
+							"size": 40,
+							"duration": 2,
+							"opacity": 8,
+							"speed": 3
+						},
+						"repulse": { "distance": 200, "duration": 0.4 },
+						"push": { "particles_nb": 4 },
+						"remove": { "particles_nb": 2 }
+					}
+				},
+				"retina_detect": true
 			});
 		};
 	</script>
@@ -728,7 +799,7 @@
 	<script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
 
 	<!-- Custom scripts -->
-	<script src="assets/js/hackusu.min.js"></script>
+	<script src="assets/js/hackusu.js"></script>
 	<script src="assets/js/timer.js"></script>
 </body>
 

@@ -226,6 +226,10 @@ section h2 {
   color: #222222;
 }
 
+#mainNav .navbar-nav {
+	margin-right: 100px;
+}
+
 #mainNav .navbar-nav > li > a {
   font-size: 12px;
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
@@ -307,7 +311,7 @@ header.masthead {
   background: /*url("../img/bg-pattern.png"),*/ linear-gradient(to left, #506e8e, #0f2439);
 }
 
-ul > li {
+ul.nice-ul > li {
 	margin-top: 1em;
 	margin-bottom: 1em;
 	text-align: left;
