@@ -18,7 +18,8 @@ body {
   display: block;
   top: 0;
   left: 0;
-  z-index: -1;
+	z-index: -1;
+	pointer-events: none;
 }
 
 
@@ -302,7 +303,6 @@ section h2 {
 
 header.masthead {
   position: relative;
-	width: 100%;
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
@@ -343,7 +343,6 @@ header.masthead .device-container .screen img {
 @media (min-width: 992px) {
   header.masthead {
     /*height: 100vh;*/
-    height: 1000px;
     min-height: 775px;
     padding-top: 0;
     padding-bottom: 0;
@@ -364,7 +363,6 @@ header.masthead .device-container .screen img {
 @media (max-width: 500px) {
     header.masthead {
         /*height: 100vh;*/
-        height: 1150px;
         min-height: 775px;
         padding-top: 50px;
         padding-bottom: 0;
@@ -622,7 +620,15 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   padding-left: 0;
 }
 
+[class^="col"] {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
 
+nav [class^="col"] {
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
+}
 
 .btn {
   border-radius: 300px;
