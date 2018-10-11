@@ -15,6 +15,10 @@
     }
   });
 
+	$("#accordion,#accordion2").on('show.bs.collapse', function () {
+		$(".collapse").collapse("hide")
+	})	
+
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
@@ -25,7 +29,7 @@
     target: '#mainNav',
     offset: 54
   });
-
+ 
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
