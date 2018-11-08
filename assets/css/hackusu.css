@@ -454,6 +454,12 @@ section.features .feature-item i {
   -webkit-text-fill-color: transparent;
 }
 
+#schedule .row:nth-of-type(2n-1) {
+
+    background-color: #eee;
+
+}
+
 section.cta {
   position: relative;
   padding: 250px 0;
@@ -620,9 +626,13 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   padding-left: 0;
 }
 
-[class^="col"] {
+#t-minus [class^="col"], #schedule [class^="col"] {
 	margin-top: 25px;
 	margin-bottom: 25px;
+}
+
+[class^="col"] {
+	margin: 5px 0;
 }
 
 nav [class^="col"] {
