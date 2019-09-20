@@ -1,594 +1,865 @@
-<!DOCTYPE>
-<html id="index">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>HackUSU - Home</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>HackUSU</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom fonts-->
+	<link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/vendor/simple-line-icons/css/simple-line-icons.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Heebo:200,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<link href="assets/css/hackusu.css" rel="stylesheet">
+
+	<!--Metadata for the website for SEO-->	
+	<script type='application/ld+json'> 
+	[
+			{
+				"@context": "http://www.schema.org",
+				"@type": "Event",
+				"name": "HackUSU Hackathon",
+				"url": "http://hackusu.org",
+				"image": "https://www.hackusu.org/assets/img/HackUSUEvent.png"
+				"description": "Come join our student and community hackathon!",
+				"startDate": "11/16/2018 02:00PM",
+				"endDate": "11/17/2018 04:30PM",
+				"location": {
+					"@type": "Place",
+					"name": "Eccles Conference Center",
+					"sameAs": "https://uicc.usu.edu",
+					"address": {
+						"@type": "PostalAddress",
+						"streetAddress": "Old Main Hill",
+						"addressLocality": "Logan",
+						"addressRegion": "UT",
+						"postalCode": "84321",
+						"addressCountry": "USA"
+					}
+				}
+			},
+			{ 
+					"@context": "http://schema.org", 
+					"@type": "WebSite", 
+					"url": "https://www.hackusu.org/", 
+					"name": "HackUSU",
+					"image": "https://www.hackusu.org/assets/img/HackUSUEvent.png",
+					"description": "Bringing tech and hacker culture to USU"
+			},
+			{ 
+				"@context": "http://schema.org",
+				"@type": "Organization",
+				"name": "HackUSU",
+				"url": "http://hackusu.org",
+				"logo": "https://www.hackusu.org/assets/img/HackUSUEvent.png",
+				"foundingDate": "2016",
+				"sameAs": [
+				"https://twitter.com/hackusu?lang=en",
+				"https://www.facebook.com/hackusu/",
+				]
+			}
+	]
+	</script>
+
 </head>
 
-<body data-spy="scroll" data-target="#navbar" data-offset="1000">
+<body id="page-top">
 
-  <!-- Nav Bar  -->
-  <div id="navbar">
-    <ul class="nav">
-      <div class="nav-icon">
-        <img src="assets/HackUSUEvent.png" alt="HackUSU Events Logo" />
-      </div>
-      <div class="nav-icon">
-        <span class="subtle">Hosted by</span>
-        <a target="_blank" href="https://www.100tb.com/">
-          <img src="assets/100tb.png" alt="HackUSU Events Logo" />
-        </a>
-      </div>
-      <div class="navigation">
-        <li class="nav-item">
-          <a target="_blank" class="btn" href="https://hackusu-slack.herokuapp.com"> 
-            <i class="fa fa-slack" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="btn" href="#about">About</a>
-        </li>
-		<li class="nav-item">
-          <a class="btn" href="#community-competition">Open Source</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn" href="#schedule">Schedule</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn" href="#faq">FAQ</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn" href="#contact">Contact</a>
-        </li>
-      </div>
-    </ul>
-  </div>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+		<div class="container">
+			<a class="navbar-brand js-scroll-trigger" href="#page-top"> <img src="assets/img/HackUSUEvent.png" width="40" />
+				HackUSU</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+			 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				Menu
+				<i class="fas fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#location">Location</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#FAQ">FAQ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="https://hackusu-slack.herokuapp.com/">Slack</a>
+					</li>
+					<li class="nav-item">
+						<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
+						 href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&amp;utm_medium=TrustBadge&amp;utm_campaign=2019-season&amp;utm_content=blue"
+						 target="_blank">
+							<img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-blue.svg" alt="Major League Hacking 2019 Hackathon Season"
+							 style="width:100%">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-  <!-- MLH Badge  -->
-  <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=blue" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-blue.svg" alt="Major League Hacking 2019 Hackathon Season" style="width:100%"></a>
-
-  <!-- Carousel  -->
-  <header class="slideshow">
-    <div class="container">
-      <div id="logo-overlay">
-        <div>
-		<a href="#about"><img src="assets/HackUSUEvent.png" class="logo" style="max-height: 400px;" alt="click to learn more"></a>
-		  <div class="row text-center">
-				<div class="col-lg">
-					<h3 class="white">USU Hackathon</h3>
-					<h5 class="white">November 16th & 17th, 2018<br><br></h5>
-					<!-- <div id="register"> -->
-					<a href="https://hackusu.typeform.com/to/jNeAg7"><button class="btn btn-register">Register</button></a>
-					<!-- </div> -->
-				</div>
-		  </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- About -->
-  <hr class="white">
-  <div class="container-fluid blue-back">
-    <div id="about">
-      <h2>About</h2>
-      <p class="text-center">HackUSU is a student club at Utah State University that is laser focused on tech.</p>
-      <div class="row text-center">
-        <div class="col-lg-5 push-lg-1 col-xs-12">
-          <h4 class="blue">Our Mission</h4>
-          <p>To bring tech and hacker culture to our campus, community, and state.</p>
-        </div>
-        <div class="col-lg-6 col-xs-12">
-          <h4 class="blue" id="our-hackers">Our Hackers</h4>
-          <ul>
-            <li>Learn how to code - No experience required</li>
-            <li>Teach each other </li>
-            <li>Learn about new and emerging technologies</li>
-            <li>Meet awesome mentors in the community</li>
-            <li>Eat free food </li>
-            <li>Become lifelong learners</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-12 text-center">
-          <h4>When and where?</h4>
-        </div>
-        <div class="col-md-8 push-md-2">
-          <p>HackUSU 2018 will be located at the Eccles Conference Center on the Utah State University Logan campus. It will
-            begin on Friday, November 16th and end on Saturday, November 17th. </p>
-        </div>
-        <div class="col-md-12">
-          <img src="assets/ccmap.jpg" alt="USU map" class="img-responsive">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Community Competition !-->
-	<hr class="white">
-	<div class="container-fluid blue-back">
-		<div id="community-competition">
-			<h2>Open Source for Mental Health</h2>
-      <h5>Community Section</h5>
-
-			<p class="text-center">
-				Create an app or website that helps solve mental health problems. Open source your solution.
-      </p>
-      <h4>Professionals welcome! Winning prize of $1000</h4>
-			<!-- <h5 class="white bold-emphasis">Winning prize of $1000</h5> -->
-			<p class="text-center">
-				All projects will be judged on <a href="#nov17" class="white mid-text-link">November 17th</a> during the <a href="#about" class="white mid-text-link">Hackathon</a>.
-			</p>
-			<p class="text-center">
-				Judges will take into account the following criteria:
-				<div class="row">
-					<div class="col-lg">
-						<ul class="bold-emphasis">
-							<li>Basis on Evidence</li>
-							<li>Innovation</li>
-							<li>Accesibility</li>
-							<li>Completeness</li>
-							<li>Difficulty and Complexity of Project</li>
-						</ul>
+	<!-- Header -->
+	<header class="masthead particle-bg">
+		<canvas class="background"></canvas>
+		<div class="background2"></div>
+		<div class="container h100">
+			<div class="row h100 masthead-hackusu">
+				<div class="col-lg-5 my-auto">
+					<!-- HackUSU logo -->
+					<div class="logo" style="max-width:450px;">
+						<img src="assets/img/HackUSUEvent.png" alt="Hackusu logo" style="max-width:100%;" />
 					</div>
 				</div>
-      </p>
-			<p class="text-center">
-        Pay what you like - donate to HackUSU to help empower students and the community by growing the organization that puts on the largest intercollegiete hackathon in Utah.
-        Contact us at hackusu@gmail.com to donate.
-      </p>
-      <p class="text-center">
-				Contact information for mental health experts, and ideas for mental health projects coming here soon!
-			</p>
-      <a href="https://hackusu.typeform.com/to/aL4bDY"><button class="btn btn-register-white">Register for Community Section</button></a>
+				<div class="col-lg-7 my-auto">
+					<div class="header-content mx-auto">
+						<h1 class="mb-5 tagline">Eat, <span class="strike-through">sleep</span>, code, repeat.</h1>
+						<!-- Change Date Here-->
+						<h3 class="hidden-sm-down">Join us November 16th & 17th, 2018</h3>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
- 
-  <!-- Schedule -->
-  <hr>
-  <div class="container-fluid white-back">
-    <div id="schedule">
-      <h2>Tentative Schedule</h2>
-      <h3>Friday, November 16</h3>
-      <div class="row">
-        <div class="col-md-3 offset-md-3 schedule-time">2:00 - 3:00 pm</div>
-        <div class="col-md-3">Registration</div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 offset-md-3 schedule-time">3:00 - 4:00 pm</div>
-        <div class="col-md-3">Opening ceremonies</div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 offset-md-3 schedule-time">4:00 - 4:30 pm</div>
-        <div class="col-md-3">Team forming event</div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 offset-md-3 schedule-time">4:30 - 5:00 pm</div>
-        <div class="col-md-3">Workshop TBA</div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 offset-md-3 schedule-time">5:00 - 5:30 pm</div>
-        <div class="col-md-3">Workshop TBA</div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 offset-md-3 schedule-time">6:00 - 7:00 pm</div>
-        <div class="col-md-3">Dinner</div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 offset-md-3 schedule-time">7:00 - 8:00 pm</div>
-        <div class="col-md-3">Workshop TBA</div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 offset-md-3 schedule-time">8:00 - 9:00 pm</div>
-        <div class="col-md-3">Workshop TBA</div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 offset-md-3 schedule-time">9:00 - 9:30 pm</div>
-        <div class="col-md-3">Code in the dark</div>
-      </div>
-      <h3 id="nov17">Saturday, November 17</h3>
-      <div class="row">
-        <div class="col-md-3 offset-md-3 schedule-time">7:00 - 8:00 am</div>
-        <div class="col-md-3">Breakfast</div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 offset-md-3 schedule-time">8:00 - 9:00 am</div>
-        <div class="col-md-3">Workshop TBA</div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 offset-md-3 schedule-time">9:00 - 10:00 am</div>
-        <div class="col-md-3">Workshop TBA</div>
-      </div>
-	  <div class="row">
-        <div class="col-md-3 offset-md-3 schedule-time">10:00 - 11:00 am</div>
-        <div class="col-md-3">Judging of "Open Source for Mental Health"</div>
-      </div>
-	  <div class="row">
-        <div class="col-md-3 offset-md-3 schedule-time">11:00 - 11:30 am</div>
-        <div class="col-md-3">Awards and Showcase of<br>"Open Source for Mental Health"</div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 offset-md-3 schedule-time">11:30 am - 12:00 pm</div>
-        <div class="col-md-3">Lighting talks</div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 offset-md-3 schedule-time">12:00 - 1:00 pm</div>
-        <div class="col-md-3">Lunch</div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 offset-md-3 schedule-time">1:00 - 1:30 pm</div>
-        <div class="col-md-3">Cup stacking contest</div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 offset-md-3 schedule-time">2:00 pm</div>
-        <div class="col-md-3">Submissions due</div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 offset-md-3 schedule-time">2:00 - 4:00 pm</div>
-        <div class="col-md-3">Judging</div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 offset-md-3 schedule-time">4:00 - 4:30 pm</div>
-        <div class="col-md-3">Awards and closing ceremonies</div>
-      </div>
-    </div>
-  </div>
+		<section id ="t-minus" class="callout">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm">
+						<!-- Change Date Here-->
+						<h3 style="color:white;">Nov 16th & 17th</h3>
+						<p>Join us at USU</p>
+					</div>
+					<div class="col-12 col-sm callout-div">
+						<div id="timer">
+							<div id="days" class="cd-no"></div>
+							<div id="hours" class="cd-no"></div>
+							<div id="minutes" class="cd-no"></div>
+							<div id="seconds" class="cd-no"></div>
+						</div>
+					</div>
 
-  <!-- FAQ -->
-  <hr>
-  <div class="container-fluid blue-back">
-    <div id="faq">
-      <h2>FAQ</h2>
-      <div id="accordion" role="tablist" aria-multiselectable="true">
-        <div class="card">
-          <div class="card-header" role="tab" id="headingOne">
+				</div>
+				<div class="row flex-row">
+					<div class="col">
+						<a href="https://hackusu.typeform.com/to/jNeAg7" class="btn btn-outline js-scroll-trigger">Register
+							Now!</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</header>
+
+
+	<!-- About Us -->
+	<section class="features" id="about">
+		<div class="container">
+			<div class="section-heading text-center">
+				<h2>About Us</h2>
+				<p class="text-muted">HackUSU is a student club at Utah State University that is laser focused on tech.</p>
+				<p class="text-muted">Our Mission is to bring tech and hacker culture to our campus, community and
+					state.</p>
+				<hr>
+			</div>
+			<div class="row">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="feature-item">
+								<i class="icon-mouse text-primary"></i>
+								<h3>Coding</h3>
+								<p class="text-muted">Learn to code with no experience required</p>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="feature-item">
+								<i class="icon-screen-smartphone text-primary"></i>
+								<h3>Latest Tech</h3>
+								<p class="text-muted">Learn about new and emerging technologies</p>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="feature-item">
+								<i class="icon-people text-primary"></i>
+								<h3>Mentors</h3>
+								<p class="text-muted">Meet awesome mentors in the community</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="feature-item">
+								<i class="icon-present text-primary"></i>
+								<p class="text-muted">Teach each other</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-6">
+							<div class="feature-item">
+								<i class="icon-cup text-primary"></i>
+								<p class="text-muted">Eat free food</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-6">
+							<div class="feature-item">
+								<i class="icon-energy text-primary"></i>
+								<p class="text-muted">Become lifelong learners</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Community Competition -->
+	<section class="callout" id="community-competition">
+		<div class="container">
+			<div class="section-heading text-center">
+				<h2>Open Source for Mental Health</h2>
+				<h3>Community Competition</h3>
+				<p class="text-muted">
+					Create an app or website that helps solve mental health problems. Open source your solution.
+				</p>
+				<h3>Professionals welcome! Winning prize of $1000!</h3>
+				<p>
+					All projects will be judged on November 17th during the Hackathon.
+				</p>
+				<p>
+					Judges will take into account the following criteria
+				</p>
+				<p>
+					<strong>Basis on Evidence</strong></br>
+					<!--
+					--><strong>Innovation</strong></br>
+					<!--
+					--><strong>Accessibility</strong></br>
+					<!--
+					--><strong>Completeness</strong></br>
+					<!--
+					--><strong>Difficulty and Complexity of Project</strong>
+				</p>
+				<p>
+					Pay what you like - donate to HackUSU to help empower students and the community by growing the organization
+					that puts on the largest intercollegiate hackathon in Utah. Contact us at <a href="mailto:hackusu@gmail.com">hackusu@gmail.com</a>
+					to donate.
+				</p>
+				<h4>Example Ideas Include:</h4>
+				<ul class="nice-ul">
+					<li>
+						Create a D&D game that encourages people to talk about their experiences through a character in the game. If you
+						have questions about this idea, you can contact Dr. Chris Chapman: <a href="mailto:chris.chapman@usu.edu">chris.chapman@usu.edu</a>
+					</li>
+					<li>
+						Create an app that people can use to regularly check in regularly and log how they are feeling as well as track 
+						the progress of their medications for treating depression, bipolarity, etc. If you have questions about this idea, you can contact Dr.
+						Chris Chapman: <a href="mailto:chris.chapman@usu.edu">chris.chapman@usu.edu</a>
+					</li>
+					<li>
+						Create an app or website that includes detailed information about different mental health services in one’s area,
+						especially for more rural areas like Cache Valley. While there are some existing websites that work towards this, many lack the
+						information for more rural areas. If you choose to do this, be sure to include detailed information that your solution provides, like how
+						much services cost and what types of insurance are accepted. An example of Cache Valley information
+						can be found <a href="http://bluetoad.com/publication/?m=41444&l=1#{%22issue_id%22:395292,%22page%22:0}">here</a>.
+						If you
+						have questions about this idea, you can contact Dr. Jess Lucero: <a href="mailto:jessica.lucero@usu.edu">jessica.lucero@usu.edu</a>
+					</li>
+				</ul>
+				<a href="https://hackusu.typeform.com/to/aL4bDY" class="btn btn-outline btn-xl js-scroll-trigger">Community
+					Registration!</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Location -->
+	<section class="map bg-logan" id="location">
+		<!--The map to Hack USU-->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7">
+					<img src="assets/img/map.png" style="max-width:100%;" />
+				</div>
+				<div class="col-lg-5">
+					<div class="section-heading text-center">
+						<h2>Location</h2>
+						<hr>
+
+						<p>HackUSU's 2018 hackathon will be located at the Eccles Conference Center on the Utah State
+							University Logan campus.</p>
+						<h4>Eccles Conference Center<br />Utah State University<br />Old Main Hill, Logan, UT</h4>
+						<a href="https://goo.gl/maps/sgh3Cgu8AE42" class="btn btn-outline js-scroll-trigger"><i class="fa fa-map-pin"></i>&nbsp;&nbsp;Google
+							Maps</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Schedule -->
+	<section class="features" id="schedule">
+		<div class="container">
+			<div class="section-heading text-center">
+				<h2>Schedule</h2>
+				<!-- Change Date Here-->
+				<p class="text-muted">This is a tenative schedule for the Nov 2018 HackUSU student hackathon.</p>
+				<hr>
+			</div>
+
+			<h3>Friday, November 16</h3>
+			<br />
+			<div class="row">
+				<div class="col-md-3 offset-md-3 schedule-time">2:00 - 3:00 pm</div>
+				<div class="col-md-3">Registration</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-3 schedule-time">3:00 - 4:00 pm</div>
+				<div class="col-md-3">Opening ceremonies</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-3 schedule-time">4:00 - 4:30 pm</div>
+				<div class="col-md-3">Team forming event</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-3 schedule-time">4:30 - 5:00 pm</div>
+				<div class="col-md-3">Workshop: Utah Open Data and Mental Health - Auditorium</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-3 schedule-time">5:00 - 6:00 pm</div>
+				<div class="col-md-3">Workshop: Intro to Programming (Erik Falor)</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-3 schedule-time">5:00 - 6:00 pm</div>
+				<div class="col-md-3">Workshop: Advanced C++ (Sundberg)</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-3 schedule-time">6:00 - 7:00 pm</div>
+				<div class="col-md-3">Dinner</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-3 schedule-time">7:00 - 8:00 pm</div>
+				<div class="col-md-3">Workshop: Intro to Arduino/Hardware - IDEA Lab</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-3 schedule-time">8:00 - 9:00 pm</div>
+				<div class="col-md-3">Workshop TBA</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-3 schedule-time">8:30 - 9:00 pm</div>
+				<div class="col-md-3">Code in the dark</div>
+			</div>
+			<br />
+			<h3>Saturday, November 17</h3>
+			<br />
+			<div class="row">
+				<div class="col-md-3 offset-md-3 schedule-time">7:00 - 8:00 am</div>
+				<div class="col-md-3">Breakfast</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-3 schedule-time">8:00 - 9:00 am</div>
+				<div class="col-md-3">Workshop: Utah Open Source -- how to get into open source and land a job</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-3 schedule-time">9:00 - 10:00 am</div>
+				<div class="col-md-3">Workshop: Cryptocurrencies (Dr. Clyde)</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-3 schedule-time">11:30 am - 12:00 pm</div>
+				<div class="col-md-3">Lighting talks</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-3 schedule-time">12:00 - 1:00 pm</div>
+				<div class="col-md-3">Lunch</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-3 schedule-time">1:00 - 1:30 pm</div>
+				<div class="col-md-3">Cup stacking contest</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-3 schedule-time">2:00 pm</div>
+				<div class="col-md-3">Submissions due</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-3 schedule-time">2:00 - 4:00 pm</div>
+				<div class="col-md-3">Judging</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-3 schedule-time">4:00 - 4:30 pm</div>
+				<div class="col-md-3">Awards and closing ceremonies</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FAQ -->
+	<section class="faq bg-primary particle-bg text-center" id="FAQ">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 mx-auto">
+					<h2>FAQ</h2>
+
+					<div id="accordion" role="tablist">
+						<div class="card">
+							<div class="card-header" role="tab" id="headingOne">
+								<h5 class="mb-0">
+									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false"
+									 aria-controls="collapseOne">
+										What is hacking?
+									</a>
+								</h5>
+							</div>
+							<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+								<div class="card-block">
+									No, we aren't breaking into anything. Hacking is a new process of learning. To us,
+									hacking means creating, innovating, and
+									building something awesome with software or hardware. Another definition that we
+									have is creatively solving
+									a problem.
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab" id="headingTwo">
+								<h5 class="mb-0">
+									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+									 aria-controls="collapseTwo">
+										I can't code. Can I still attend?
+									</a>
+								</h5>
+							</div>
+							<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+								<div class="card-block">
+									Absolutely! If you have a passion for all things tech, this is the place for you.
+									Our events span a range of skill levels.
+									We have events planned for beginners, so you'll learn how to code in no time!
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab" id="headingThree">
+								<h5 class="mb-0">
+									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+									 aria-controls="collapseThree">
+										How much does it cost?
+									</a>
+								</h5>
+							</div>
+							<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+								<div class="card-block">
+									HackUSU is completely free! There's no entry fee, and we'll provide enough food and
+									snacks for the entire 24 hours. How neat
+									is that?
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab" id="headingFour">
+								<h5 class="mb-0">
+									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false"
+									 aria-controls="collapseFour">
+										How many people can be on my team?
+									</a>
+								</h5>
+							</div>
+							<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+								<div class="card-block">
+									Teams can have up to 4 people. If you don't have a team when you come, don't worry!
+									There are plenty of people who come alone
+									that you can team up with.
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab" id="headingFive">
+								<h5 class="mb-0">
+									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false"
+									 aria-controls="collapseFive">
+										Who can come to HackUSU?
+									</a>
+								</h5>
+							</div>
+							<div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+								<div class="card-block">
+									You must currently be a university or college student, or have graduated in the
+									last 12 months. There is no restriction on
+									major. All students are welcome!
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab" id="headingSix">
+								<h5 class="mb-0">
+									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false"
+									 aria-controls="collapseSix">
+										I don't really want to code. Is there something else I can do at HackUSU?
+									</a>
+								</h5>
+							</div>
+							<div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix">
+								<div class="card-block">
+									Absolutely! Many times, coming up with an idea for a project is the hardest part,
+									and that doesn't require any technical
+									knowledge. Also, we need designers to help us make our apps look good!
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab" id="headingSeven">
+								<h5 class="mb-0">
+									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false"
+									 aria-controls="collapseSeven">
+										Can I start now?
+									</a>
+								</h5>
+							</div>
+							<div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven">
+								<div class="card-block">
+									You can't use any code that was written before the start of the hackathon. However,
+									we encourage you to begin thinking of
+									ideas now!
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab" id="headingEight">
+								<h5 class="mb-0">
+									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false"
+									 aria-controls="collapseEight">
+										Will there be prizes?
+									</a>
+								</h5>
+							</div>
+							<div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight">
+								<div class="card-block">
+									Yes, there will definitely be prizes! We will have different prize categories, and
+									the judges will pick the best project
+									in each category. In addition, there will be lots of swag from our sponsors for
+									everyone!
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab" id="headingNine">
+								<h5 class="mb-0">
+									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false"
+									 aria-controls="collapseNine">
+										What are some of the prize categories?
+									</a>
+								</h5>
+							</div>
+							<div id="collapseNine" class="collapse" role="tabpanel" aria-labelledby="headingNine">
+								<div class="card-block">
+									General, Hardware, Game Development, Data Analysis and more TBA!
+								</div>
+							</div>
+						</div>
+						<!-- <div class="card">
+          <div class="card-header" role="tab" id="headingCHANGETHISTOTHENEXTNUMBER">
             <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                What is hacking?
-              </a>
-            </h5>
-          </div>
-          <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
-            <div class="card-block">
-              No, we aren't breaking into anything. Hacking is a new process of learning. To us, hacking means creating, innovating, and
-              building something awesome with software or hardware. Another definition that we have is creatively solving
-              a problem.
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" role="tab" id="headingTwo">
-            <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                I can't code. Can I still attend?
-              </a>
-            </h5>
-          </div>
-          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-            <div class="card-block">
-              Absolutely! If you have a passion for all things tech, this is the place for you. Our events span a range of skill levels.
-              We have events planned for beginners, so you'll learn how to code in no time!
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" role="tab" id="headingThree">
-            <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseCHANGETHISTOTHENEXTNUMBER" aria-expanded="false" aria-controls="collapseCHANGETHISTOTHENEXTNUMBER">
                 How much does it cost?
               </a>
             </h5>
           </div>
-          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div id="collapseCHANGETHISTOTHENEXTNUMBER" class="collapse" role="tabpanel" aria-labelledby="headingCHANGETHISTOTHENEXTNUMBER">
             <div class="card-block">
-              HackUSU is completely free! There's no entry fee, and we'll provide enough food and snacks for the entire 24 hours. How neat
-              is that?
+              HackUSU is completely free! No entry fee, and we'll provide enough food and snacks for the entire 24 hours. How neat is that?
             </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-header" role="tab" id="headingFour">
-            <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                How many people can be on my team?
-              </a>
-            </h5>
-          </div>
-          <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
-            <div class="card-block">
-              Teams can have up to 4 people. If you don't have a team when you come, don't worry! There are plenty of people who come alone
-              that you can team up with.
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" role="tab" id="headingFive">
-            <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                Who can come to HackUSU?
-              </a>
-            </h5>
-          </div>
-          <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
-            <div class="card-block">
-              You must currently be a university or college student, or have graduated in the last 12 months. There is no restriction on
-              major. All students are welcome!
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" role="tab" id="headingSix">
-            <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                I don't really want to code. Is there something else I can do at HackUSU?
-              </a>
-            </h5>
-          </div>
-          <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix">
-            <div class="card-block">
-              Absolutely! Many times, coming up with an idea for a project is the hardest part, and that doesn't require any technical
-              knowledge. Also, we need designers to help us make our apps look good!
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" role="tab" id="headingSeven">
-            <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                Can I start now?
-              </a>
-            </h5>
-          </div>
-          <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven">
-            <div class="card-block">
-              You can't use any code that was written before the start of the hackathon. However, we encourage you to begin thinking of
-              ideas now!
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" role="tab" id="headingEight">
-            <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                Will there be prizes?
-              </a>
-            </h5>
-          </div>
-          <div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight">
-            <div class="card-block">
-              Yes, there will definitely be prizes! We will have different prize categories, and the judges will pick the best project
-              in each category. In addition, there will be lots of swag from our sponsors for everyone!
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" role="tab" id="headingNine">
-            <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                What are some of the prize categories?
-              </a>
-            </h5>
-          </div>
-          <div id="collapseNine" class="collapse" role="tabpanel" aria-labelledby="headingNine">
-            <div class="card-block">
-              General, Hardware, Game Development, and more TBA!
-            </div>
-          </div>
-        </div>
-        <!-- <div class="card">
-        <div class="card-header" role="tab" id="headingCHANGETHISTOTHENEXTNUMBER">
-          <h5 class="mb-0">
-            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseCHANGETHISTOTHENEXTNUMBER" aria-expanded="false" aria-controls="collapseCHANGETHISTOTHENEXTNUMBER">
-              How much does it cost?
-            </a>
-          </h5>
-        </div>
-        <div id="collapseCHANGETHISTOTHENEXTNUMBER" class="collapse" role="tabpanel" aria-labelledby="headingCHANGETHISTOTHENEXTNUMBER">
-          <div class="card-block">
-            HackUSU is completely free! No entry fee, and we'll provide enough food and snacks for the entire 24 hours. How neat is that?
-          </div>
-        </div>
-      </div> -->
-      </div>
+        </div> -->
+					</div>
 
-      <h2 style="margin-top: 25px;margin-bottom: 25px;">Prize Categories</h2>
-      <div id="accordion" role="tablist" aria-multiselectable="true">
-        <div class="card">
-          <div class="card-header" role="tab" id="headingFiveP">
-            <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFiveP" aria-expanded="false" aria-controls="collapseFiveP">
-                General
-              </a>
-            </h5>
-          </div>
-          <div id="collapseFiveP" class="collapse" role="tabpanel" aria-labelledby="headingFiveP">
-            <div class="card-block">
-              Any project that doesn't fit the other categories!
-              <p>Judging Criteria:</p>
-              <ul>
-                <li>Coolness</li>
-                <li>How much did you learn?</li>
-                <li>Cleverness</li>
-                <li>Originality</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" role="tab" id="headingOneP">
-            <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOneP" aria-expanded="false" aria-controls="collapseOneP">
-                Open Source for Mental Health
-              </a>
-            </h5>
-          </div>
-          <div id="collapseOneP" class="collapse" role="tabpanel" aria-labelledby="headingOneP">
-            <div class="card-block">
-              Details TBA
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" role="tab" id="headingTwoP">
-            <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwoP" aria-expanded="false" aria-controls="collapseTwoP">
-                Game Development
-              </a>
-            </h5>
-          </div>
-          <div id="collapseTwoP" class="collapse" role="tabpanel" aria-labelledby="headingTwoP">
-            <div class="card-block">
-              Any game made with any technology.
-              <p>Judging Criteria:</p>
-              <ul>
-                <li>All criteria from the general catagory</li>
-                <li>Funness</li>
-                <li>Completeness</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" role="tab" id="headingFourP">
-            <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFourP" aria-expanded="false" aria-controls="collapseFourP">
-                Hardware
-              </a>
-            </h5>
-          </div>
-          <div id="collapseFourP" class="collapse" role="tabpanel" aria-labelledby="headingFourP">
-            <div class="card-block">
-              Any project that is focused on hardware.
-              <p>Judging Criteria:</p>
-              <ul>
-                <li>All criteria from the general catagory</li>
-                <li>Completeness</li>
-                <li>Usability</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Sponsors -->
-  <hr>
-  <div class="container-fluid white-back">
-    <div id="sponsors">
-      <h3>Sponsors</h3>
-      <div class="row text-center text-lg-left">
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a target="_blank" href="http://www.engineering.usu.edu/">
-            <img class="img-fluid pad-img" src="assets/engineering-logo.png" alt="">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a target="_blank" href="http://www.cs.usu.edu/">
-            <img class="img-fluid pad-img" src="assets/CS-logo.png" alt="">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a target="_blank" href="https://www.100tb.com/">
-            <img class="img-fluid pad-img" src="assets/100tb.png" alt="">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a target="_blank" href="https://www.rstudio.com/">
-            <img class="img-fluid pad-img" src="assets/rstudio.png" alt="">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a target="_blank" href="https://mlh.io/">
-            <img class="img-fluid pad-img" src="assets/mlh-logo-color.png" alt="">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a target="_blank" href="https://www.conservice.com/">
-            <img class="img-fluid pad-img" src="assets/Conservice-MainLogo.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a target="_blank" href="https://www.jetbrains.com/">
-            <img class="img-fluid pad-img" src="assets/jetbrains.png" alt="">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a target="_blank" href="https://opendata.utah.gov/">
-            <img class="img-fluid pad-img" src="assets/utahopendata.png" alt="">
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6">
-          <a target="_blank" href="http://www.imflash.com/">
-            <img class="img-fluid pad-img" src="assets/imflash.png" alt="">
-          </a>
-        </div>
-      <div class="col-lg-3 col-md-4 col-xs-6">
-        <a target="_blank" href="https://www.cloudflare.com/">
-          <img class="img-fluid pad-img" src="assets/cloudflare.png" alt="">
-        </a>
-      </div>
-      <!-- <div class="col-lg-3 col-md-4 col-xs-6">
-        <a target="_blank" href="#">
-          <img class="img-fluid pad-img" src="http://placehold.it/400x300" alt="">
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-xs-6">
-        <a target="_blank" href="#">
-          <img class="img-fluid pad-img" src="http://placehold.it/400x300" alt="">
-        </a>
-      </div> -->
-      </div>
+					<h2 style="margin-top: 25px;margin-bottom: 25px;">Prize Categories</h2>
 
-    </div>
+					<div id="accordion2" role="tablist" aria-multiselectable="true">
+						<div class="card">
+							<div class="card-header" role="tab" id="headingFiveP">
+								<h5 class="mb-0">
+									<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFiveP" aria-expanded="false"
+									 aria-controls="collapseFiveP">
+										General
+									</a>
+								</h5>
+							</div>
+							<div id="collapseFiveP" class="collapse" role="tabpanel" aria-labelledby="headingFiveP">
+								<div class="card-block">
+									<p>Any project that doesn't fit the other categories!</p>
+									<h4>Judging Criteria</h4>
+									<p>Coolness<br />
+										How much did you learn?<br />
+										Cleverness<br />
+										Originality</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab" id="headingOneP">
+								<h5 class="mb-0">
+									<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOneP" aria-expanded="false"
+									 aria-controls="collapseOneP">
+										Open Source
+									</a>
+								</h5>
+							</div>
+							<div id="collapseOneP" class="collapse" role="tabpanel" aria-labelledby="headingOneP">
+								<div class="card-block">
+									<a class="js-scroll-trigger" href="#community-competition">See above</a>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab" id="headingTwoP">
+								<h5 class="mb-0">
+									<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwoP" aria-expanded="false"
+									 aria-controls="collapseTwoP">
+										Game Development
+									</a>
+								</h5>
+							</div>
+							<div id="collapseTwoP" class="collapse" role="tabpanel" aria-labelledby="headingTwoP">
+								<div class="card-block">
+									<p>Any game made with any technology.</p>
+									<h4>Judging Criteria</h4>
+									<p>
+										All criteria from the general catagory<br />
+										Funness<br />
+										Completeness
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab" id="headingThreeP">
+								<h5 class="mb-0">
+									<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseThreeP" aria-expanded="false"
+									 aria-controls="collapseThreeP">
+										Data Analysis
+									</a>
+								</h5>
+							</div>
+							<div id="collapseThreeP" class="collapse" role="tabpanel" aria-labelledby="headingThreeP">
+								<div class="card-block">
+									<p>Interesting or useful insights gained from data</p>
+									<h4>Judging Criteria</h4>
+									<p>
+										All criteria from the general catagory<br />
+										Sound logic/practices<br />
+										Interesting/useful insights
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab" id="headingFourP">
+								<h5 class="mb-0">
+									<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFourP" aria-expanded="false"
+									 aria-controls="collapseFourP">
+										Hardware
+									</a>
+								</h5>
+							</div>
+							<div id="collapseFourP" class="collapse" role="tabpanel" aria-labelledby="headingFourP">
+								<div class="card-block">
+									<p>Any project that is focused on hardware.</p>
+									<h4>Judging Criteria</h4>
+									<p>
+										All criteria from the general catagory<br />
+										Completeness<br />
+										Usability
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-  </div>
+	<!-- Sponsors -->
+	<section class="sponsors" id="sponsors">
+		<div class="container">
+			<div class="section-heading text-center">
+				<h2>Sponsors</h2>
+				<p class="text-muted">The amazing sponsors of HackUSU.</p>
+				<hr>
+				<br />
+				<div class="row flex-row">
+					<div class="col-lg-3 col-md-4 col-xs-6">
+						<img alt="USU Engineering logo" src="assets/img/engineering-logo.png" width="200" />
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6">
+						<img alt="USU Computer Science logo" src="assets/img/CS-logo.png" width="200" />
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6">
+						<img alt="100tb logo" src="assets/img/100tb.png" width="150" />
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6">
+						<img alt="Major League Hacking logo" src="assets/img/mlh-logo-color.png" width="150" />
+					</div>
+				</div>
+				<div class="row flex-row">
+					<div class="col-lg-3 col-md-4 col-xs-6">
+						<img alt="Pope Tech logo" src="assets/img/popetech.png" width="200" />
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6">
+						<img alt="RR Donnelley logo" src="assets/img/rrd-logo.jpg" width="200" />
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6">
+						<img src="assets/img/stg.png" width="150" />
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6">
+						<img alt="USU Student Association logo" src="assets/img/USUSA.jpg" width="150" />
+					</div>
+				</div>
+				<div class="row flex-row">
+					<div class="col-lg-3 col-md-4 col-xs-6">
+						<img src="assets/img/SDL.png" width="200" />
+					</div>
+					<div class="col-lg-3 col-md-4 col-xs-6">
+						<img src="assets/img/UTOS.png" width="200" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-  <!-- Contact -->
-  <hr>
-  <div class="container-fluid blue-back">
-    <div id="contact">
-      <h3>Contact</h3>
-		<p>
-			<i class="fa fa-envelope contact-icon" aria-hidden="true"></i>
-			Email us at hackusu@gmail.com
-		</p>
-        <a target="_blank" class="btn btn-slack" href="https://hackusu-slack.herokuapp.com"> 
-			<i class="fa fa-slack contact-icon" aria-hidden="true"></i>
-			Join us on Slack
-		</a>
-		<a target="_blank" class="btn btn-facebook" href="https://www.facebook.com/hackusu/">
-			<i class="fa fa-facebook contact-icon" aria-hidden="true"></i>
-			Find us on Facebook
-		</a>
-    </div>
-  </div>
-	
-  <!-- Footer -->
-  <hr>
-  <div class="container-fluid">
-    <footer>
-      <div class="footer-icons">
-        <a target="_blank" class="btn btn-slack-icn" href="https://hackusu-slack.herokuapp.com"> 
-          <i class="fa fa-slack" aria-hidden="true"></i>
-        </a>
-        <a target="_blank" href="https://www.facebook.com/hackusu/" class="footer-link">
-          <i class="fa fa-facebook-square" aria-hidden="true"></i>
-        </a>
-        <a target="_blank" href="https://twitter.com/hackusu?lang=en" class="footer-link">
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-        </a>
-      </div>
-    </footer>
-  </div>
+	<!-- Image Callout -->
+	<section class="cta">
+		<div class="cta-content">
+			<div class="container">
+				<h2>Coding skills you need.</h2>
+				<a href="https://hackusu.typeform.com/to/jNeAg7" class="btn btn-outline btn-xl js-scroll-trigger">Register
+					Now!</a>
+			</div>
+		</div>
+		<div class="overlay"></div>
+	</section>
 
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-  <script src="bundle.js"></script>
+
+	<!-- Contact Information -->
+	<section class="contact particle-bg bg-primary" id="contact">
+		<div class="container">
+			<h2>Contact</h2>
+			<p><i class="fa fa-envelope"></i>&nbsp;Email us at hackusu@gmail.com</p>
+			<ul class="list-inline list-social">
+				<li class="list-inline-item social-twitter">
+					<a href="https://twitter.com/hackusu?lang=en">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li class="list-inline-item social-facebook">
+					<a href="https://www.facebook.com/hackusu/">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				</li>
+				<li class="list-inline-item social-slack">
+					<a href="https://hackusu-slack.herokuapp.com">
+						<i class="fab fa-slack"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- Particle JavaScript -->
+
+	<script src="assets/js/particles.js"></script>
+	<script>
+		window.onload = function () {
+			Particles.init({
+				"selector": '.background',
+				"particles": {
+					"number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+					"color": { "value": "#ffffff" },
+					"shape": {
+						"type": "circle",
+						"stroke": { "width": 0, "color": "#000000" },
+						"polygon": { "nb_sides": 5 },
+						"image": { "src": "img/github.svg", "width": 100, "height": 100 }
+					},
+					"opacity": {
+						"value": 0.5,
+						"random": false,
+						"anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false }
+					},
+					"size": {
+						"value": 3,
+						"random": true,
+						"anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false }
+					},
+					"line_linked": {
+						"enable": true,
+						"distance": 150,
+						"color": "#ffffff",
+						"opacity": 0.4,
+						"width": 1
+					},
+					"move": {
+						"enable": true,
+						"speed": 6,
+						"direction": "none",
+						"random": false,
+						"straight": false,
+						"out_mode": "out",
+						"bounce": false,
+						"attract": { "enable": false, "rotateX": 600, "rotateY": 1200 }
+					}
+				},
+				"interactivity": {
+					"detect_on": "canvas",
+					"events": {
+						"onhover": { "enable": true, "mode": "repulse" },
+						"onclick": { "enable": true, "mode": "push" },
+						"resize": true
+					},
+					"modes": {
+						"grab": { "distance": 400, "line_linked": { "opacity": 1 } },
+						"bubble": {
+							"distance": 400,
+							"size": 40,
+							"duration": 2,
+							"opacity": 8,
+							"speed": 3
+						},
+						"repulse": { "distance": 200, "duration": 0.4 },
+						"push": { "particles_nb": 4 },
+						"remove": { "particles_nb": 2 }
+					}
+				},
+				"retina_detect": true
+			});
+		};
+	</script>
+
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Plugin JavaScript -->
+	<script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+	<!-- Custom scripts -->
+	<script src="assets/js/hackusu.js"></script>
+	<script src="assets/js/timer.js"></script>
 </body>
 
 </html>
